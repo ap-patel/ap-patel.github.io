@@ -1,0 +1,125 @@
+/** {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}*/
+
+/** {
+    border: 1px solid red !important;
+}*/
+
+name{
+    
+    height: 50px;
+    font-size: 55px;
+    color: darkturquoise;
+    color:deepskyblue;
+    color:dodgerblue;
+	font-family: Veranda, sans-serif;
+    
+}
+.MainHeader{
+    height: 65px;
+}
+job{
+    font-size: 25px;
+    font-family: Verdana, Geneva, sans-serif;
+    color:darkslateblue;
+    color:darkgray;
+}
+.side{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tablejava{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tablepython{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tablec{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    background-color: azure;
+}
+.cproject{
+    padding-left: 40px;
+    width: 700px;
+}
+newfont{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.pythonexp{
+    padding-left: 5px;
+    width: 650px;
+}
+.apps{
+    padding-left: 25px;
+    width: 700px;
+}
+.myPicture{
+    height: auto;
+    width: auto;
+    background-color:azure;
+}
+.myResume{
+    border-left: 500px;
+    height: auto;
+    width: auto;
+    
+}
+github{
+    font-size: 15px;
+}
+indent{
+    padding-left: 50px;
+}
+.profile{
+    padding-top: 50px;
+}
+.technical{
+    padding-top: 300px;
+}
+.relatedexperience{
+    padding-top: 300px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:dimgray;
+    position: fixed;
+    top: 0.5;
+    width: 31%;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
