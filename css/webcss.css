@@ -40,7 +40,7 @@ body {
 
 .button-container {
   margin-left: auto;
-  max-width: 500px;
+  /* max-width: 500px; */
   display: flex;
   align-items: center;
   height: 100%;
