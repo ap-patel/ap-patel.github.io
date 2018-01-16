@@ -84,7 +84,6 @@ body {
 }
 
 .second-panel {
-  height: 500px;
   padding: 20px;
   min-height: 50vh;
   display: flex;
@@ -103,36 +102,58 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(0, 113, 230);;
+  background-color: rgb(0, 113, 230);
+  ;
   color: white;
 }
-.skills{
+
+.skills, .experience {
   width: 750px;
 }
-.skills-list{
+
+.skills-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.languages{
+.languages {
   display: flex;
   flex-wrap: wrap;
 }
-.one-lang{
+
+.one-lang {
   display: flex;
 }
-.rating{
+
+.rating {
   min-width: 91px;
 }
-.lang-name{
+
+.lang-name {
   padding-left: 15px;
 }
-.col-lang{
+
+.col-lang {
   display: flex;
   flex-direction: column;
   padding: 15px;
 }
-.contact-panel{
+
+.one-exp {
+  box-shadow: 4px 6px 6px 0px gainsboro;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-bottom: none;
+  border-right: none;
+  margin-top: 15px;
+}
+
+.exp-body {
+  padding: 15px;
+}
+
+.contact-panel {
   display: flex;
   justify-content: center;
   align-items: center;
