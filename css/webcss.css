@@ -16,6 +16,12 @@ body {
   position: absolute;
   top: 0px;
   width: 100%;
+  position: fixed;
+  transition: all 0.5s;
+}
+
+.header-container.over-white{
+  background-color: #0051ff;
 }
 
 .header {

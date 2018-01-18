@@ -12,11 +12,11 @@
 </head>
 
 <body>
-  <nav class="header-container">
+  <nav class="header-container" id="header-container">
     <div class="header max-width">
       <div class="button-container">
         <div class="label me"  onclick="smoothScroll(document.getElementById('my-profile'))">
-          My profile <i class="fa fa-user-o" aria-hidden="true"></i>
+          About me <i class="fa fa-user-o" aria-hidden="true"></i>
         </div>
         <div class="label" onclick="smoothScroll(document.getElementById('my-skills'))">
           Skills
@@ -39,8 +39,8 @@
     <div class="profile">
       <h1> Profile</h1>
       <div class="text">
-        I am a fourth year undergrad at University of Toronto (St. George) enrolled in computer science specialist. I am interested in solving problems at every scale!<br />
-        <br /> I use traditional software development techiniques as well as modern methods like deep learning for vision, machine learning and more.
+        I am a fourth year undergrad at University of Toronto (St. George) enrolled in Computer Science specialist. I am interested in solving problems at every scale!<br />
+        <br /> I use traditional software development techniques as well as modern methods like deep learning for vision, machine learning and more.
       </div>
     </div>
   </div>
@@ -232,7 +232,7 @@
             <a href="https://www.theredpin.com/">TheRedPin.com</a> (May 2016 - Jul 2017) [Co-op]:
         </div>
         <div class="exp-body">
-          Worked as a full-stack developer at theredpin.com mostly doing front end with .volt server-side template language, Vue.js, SCSS, HTML. Some backend experience with Controller , Models and services.
+          Worked as a full-stack developer at theredpin.com mostly doing front end with .volt server-side template language, Vue.js, SCSS, HTML. Some backend experience with controller , models and services.
           <br />
           <br />
           Also did some QA development in node.js with chai.js and mocha.js
@@ -247,7 +247,7 @@
         </div>
         <div class="exp-body">
           This was my final project in a vision course i took. I built a hand gesture recogniser which uses a webcam to
-          recognize gesture you do in front of it like palm, peace, ok, fist, none in real time.
+          recognize gesture you do in front of it like palm, peace, ok, fist and none in real time.
           <br />
           <br />
           I used OpenCV for image processing and keras for CNN.
@@ -273,7 +273,7 @@
 
       var targetY = 0;
       do { //find the top of target relatively to the container
-          if (target == scrollContainer) break;
+          if (target == scrollContainer ) break;
           targetY += target.offsetTop;
       } while (target = target.offsetParent);
 
@@ -283,8 +283,24 @@
           setTimeout(function(){ scroll(c, a, b, i); }, 8);
       }
       // start scrolling
-      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+      scroll(scrollContainer, scrollContainer.scrollTop , targetY - 70, 0);
   }
-  </script>
 
+  var headerContainer = document.querySelector('#header-container');
+  window.onscroll = function() {
+    var profileElem = document.querySelector('#my-profile');
+      profileHieght = profileElem.getBoundingClientRect().top;
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      console.log( "SCROLL FROM TOP: ",scrollTop);
+      console.log('PROFILE HEIGHT: ', profileHieght);
+      if(profileHieght <= 70){
+        headerContainer.classList.add('over-white');
+      }else{
+        headerContainer.classList.remove('over-white');
+      }
+
+  };
+
+
+  </script>
 </body>
